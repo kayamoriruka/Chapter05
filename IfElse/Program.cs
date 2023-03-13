@@ -26,8 +26,8 @@ namespace IfElse
             else
                 Console.WriteLine("홀수");
 
-            //string result = number % 2 == 0 ? "짝수" : "홀수";
-            //Console.WriteLine(result);
+            
+            //Console.WriteLine(number % 2 == 0 ? "짝수" : "홀수");
 
 
         }
