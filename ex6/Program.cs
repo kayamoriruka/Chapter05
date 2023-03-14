@@ -15,27 +15,25 @@ namespace ex6
             string input2 = Console.ReadLine();
             int number2 = int.Parse(input2);
 
+            if (number2 > 100 || number2 < 0)
+            {
+                Console.WriteLine("점수를 잘못 입력하셨습니다. 확인 후 다시 입력해주세요.");
+                return;
+            }
+           
             if (number1 == 4)
             {
-                if (number2 > 100)
-                    Console.WriteLine("점수를 잘못 입력하셨습니다. 확인 후 다시 입력해주세요.");
-                else if (number2 >= 70)
+                if (number2 >= 70)
                     Console.WriteLine($"입력하신 점수 {number2}는(은) 합격 입니다.");
                 else if (number2 >= 0)
                     Console.WriteLine($"입력하신 점수 {number2}는(은) 불합격 입니다.");
-                else if (number2 < 0)
-                    Console.WriteLine("점수를 잘못 입력하셨습니다. 확인 후 다시 입력해주세요.");
             }
             else
             {
-                if (number2 > 100)
-                    Console.WriteLine("점수를 잘못 입력하셨습니다. 확인 후 다시 입력해주세요.");
-                else if (number2 >= 60)
+                if (number2 >= 60)
                     Console.WriteLine($"입력하신 점수 {number2}는(은) 합격 입니다.");
                 else if (number2 >= 0)
                     Console.WriteLine($"입력하신 점수 {number2}는(은) 불합격 입니다.");
-                else if (number2 < 0)
-                    Console.WriteLine("점수를 잘못 입력하셨습니다. 확인 후 다시 입력해주세요.");
             }
 
         }
