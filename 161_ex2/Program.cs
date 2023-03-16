@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _161_ex2
+namespace p161_ex2
 {
     class Program
     {
@@ -39,9 +39,8 @@ namespace _161_ex2
                     result = number1 % number2;
                     break;
                 default:
-                    Console.Write("error");
+                    Console.WriteLine("error");
                     return;
-
             }
             Console.WriteLine($"입력하신 {input1}{input3}{input2}의 결과값은 {result} 입니다.");
 
