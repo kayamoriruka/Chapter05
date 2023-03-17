@@ -5,15 +5,16 @@ class MainClass
     public static void Main(string[] args)
     {
         int count = 1;
-        while (count <= 5)
+        do
         {
             int starCount = 1;
-            while (starCount <= count)
+            do
             {
                 Console.Write("*");
                 starCount++;
-            }
+            } while (starCount <= count);
             Console.WriteLine();
             count++;
-        }
+        } while (count <= 5);
     }
+}
