@@ -6,40 +6,38 @@ namespace ParkSeungBin_ex3
     {
         static void Main(string[] args)
         {
-            //ex1_while
-            int i = 0;
-            int j = 0;
-            while (i < 5)
+            //ex1_while_do
+            int count = 1;
+            do
             {
-                while (j <= i)
+                int starCount = 1;
+                do
                 {
                     Console.Write("*");
-                    j++;
-                }
-                j = 0;
-                
+                    starCount++;
+                } while (starCount <= count);
+
                 Console.WriteLine();
-                i++;
-            }
+
+                count++;
+
+            } while (count <= 5);
 
             Console.WriteLine();
 
+            //ex2_while_do
 
-            //ex2_while
-
-            int k = 0;
-            int l = 4;
-            while (k < 5)
+            int i = 5;
+            while (i > 0)
             {
-                while (l >= k)
+                int j = 0;
+                do
                 {
                     Console.Write("*");
-                    l--;
-                }
-                l = 4;
-
+                    j++;
+                } while (j < i);
                 Console.WriteLine();
-                k++;
+                i--;
             }
         }
     }
